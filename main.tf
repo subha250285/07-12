@@ -1,10 +1,13 @@
 provider "aws" {
   region = "ap-south-1"
 }
-resource "aws_s3_bucket" "my_bucket1234" {
-  bucket  = "my-unique-bucket-name1"
-  tags    = {
-	Name          = "MyS3Bucket1321"
-	Environment    = "Production"
+resource "aws_s3_bucket" "rraa" {
+  bucket = "my-tf-test-bucket25"
+
+  tags = {
+    Name        = "My bucket25"
+    Environment = "Dev"
   }
 }
+
+
